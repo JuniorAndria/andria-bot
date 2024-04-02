@@ -21,7 +21,7 @@ export const player = async (
 ) => {
     const client = message.client as AndriaClient;
     const guildId = message.guild?.id;
-    const embed = getEmbedMessage('Tocando agora ♪', `**${song.title}**`);
+    const embed = getEmbedMessage('Tocando agora ♪', `**${song?.title}**`);
     if (!guildId) return;
     const queue: Queue | undefined = client.queues.get(guildId);
     if (!queue) {
