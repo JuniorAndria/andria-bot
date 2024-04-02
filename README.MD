@@ -4,12 +4,12 @@ AndriaBot is a Discord bot written in TypeScript (TS) that allows users to liste
 
 ## Features
 
-- Play music and videos from YouTube
-- Play music from Spotify
-- Pause, resume, and skip tracks
-- Shuffle the playlist
-- Clear the playlist
-- Loop the current track or playlist
+- Play music and videos from YouTube.
+- Play music from Spotify.
+- Pause, resume, and skip tracks.
+- Shuffle the playlist.
+- Clear the playlist.
+- Loop the current track or the entire playlist.
 
 ## Installation
 
@@ -38,7 +38,7 @@ AndriaBot is a Discord bot written in TypeScript (TS) that allows users to liste
       BOT_TOKEN=<YOUR_BOT_TOKEN>
       ```
 
-3.1 Configure the YouTube API key:
+4. Configure the YouTube API key:
     - Create a new project on the [Google Cloud Console](https://console.cloud.google.com/).
     - Enable the YouTube Data API v3 for your project.
     - Generate an API key.
@@ -48,7 +48,7 @@ AndriaBot is a Discord bot written in TypeScript (TS) that allows users to liste
       YOUTUBE_API_KEY=<YOUR_YOUTUBE_API_KEY>
       ```
 
-3.2 Configure Spotify integration:
+5. Configure Spotify integration:
     - Create a new Spotify application on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications).
     - Copy the Client ID and Client Secret.
     - Add the following lines to the `.env` file, replacing `<YOUR_CLIENT_ID>` and `<YOUR_CLIENT_SECRET>` with your actual credentials:
@@ -58,46 +58,30 @@ AndriaBot is a Discord bot written in TypeScript (TS) that allows users to liste
       SPOTIFY_CLIENT_SECRET=<YOUR_CLIENT_SECRET>
       ```
 
-3.3 Configure the maximum playlist size:
-    - Add the following lines to the `.env` file, replacing `<SIZE>` with your max playlist size:
+6. Configure the maximum playlist size:
+    - Add the following line to the `.env` file, replacing `<SIZE>` with your preferred maximum playlist size:
 
       ```plaintext
       MAX_PLAYLIST_SIZE=<SIZE>
       ```
 
-4. Run
-      ```bash
-      # Using Yarn
-      yarn start
+7. Run the bot:
+    ```bash
+    # Using Yarn
+    yarn start
 
-      # Using npm
-      npm start
-      ```
+    # Using npm
+    npm start
+    ```
 
-2. Invite the bot to your Discord server:
+8. Invite the bot to your Discord server:
 
-    - Go to the [Discord Developer Portal](https://discord.com/developers/applications).
-    - Select your application.
-    - Navigate to the "OAuth2" section.
-    - Under "Scopes", select "bot".
-    - Under "Bot Permissions", select the necessary permissions for your bot (e.g., "Send Messages", "Connect", "Speak").
-    - Copy the generated invite link and open it in your web browser.
-    - Select your server and authorize the bot.
+    - Follow the steps in the Discord Developer Portal to generate an invite link with the necessary permissions.
+    - Open the generated invite link in your web browser to authorize the bot and add it to your server.
 
-3. Use the following commands in your Discord server:
+9. Use the following commands in your Discord server to interact with the bot:
 
-    - `!play <YouTube URL> | <Spotify TRACK>`: Play a YouTube video or YouTube playlist or Spotify music.
-    - `!pause`: Pause the current track.
-    - `!resume`: Resume the paused track.
-    - `!skip`: Skip to the next track.
-    - `!volume <percentage>`: Adjust the volume (0-100).
-    - `!shuffle`: Shuffle the playlist.
-    - `!loop`: Loop the current track or playlist.
-    - `!playlist <YouTube URL>`: Play a YouTube playlist
-    - `!ping`: Show the bot's ping.
-    - `!uptime`: Show the bot's uptime.
-    - `!version`: Show the bot's version.
-    - `!help`: Show the bot's help message.
+    - Detailed command usage.
 
 ## Contributing
 
