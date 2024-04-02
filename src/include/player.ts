@@ -44,7 +44,7 @@ export const player = async (
     } catch (error: any) {
         if (queue) {
             queue.songs.shift();
-            module.exports.player(queue.songs[0], message);
+            module.exports.player(queue.songs[0], message, channel);
         }
         embed.setDescription('Erro ao tocar a música');
         return channel.send({ embeds: [embed] });
